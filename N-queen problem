@@ -107,7 +107,7 @@ void solve(int col, vector<string>&board, vector<vector<string>>&ans, vector<int
      board[i]=s;
      }
      vector<int> leftRow(n,0), upperDiag(2 * n-1, 0), lowerDiag(2 * n-1,0);
-     solve(0,board,ans,leftRow, upperDiag, loweDiag, n);
+     solve(0,board,ans,leftRow, upperDiag, lowerDiag, n);
      return ans;
     }
 };
